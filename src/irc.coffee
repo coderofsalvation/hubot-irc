@@ -195,8 +195,6 @@ class IrcBot extends Adapter
       autoRejoin: true
       retryCount: Infinity
 
-    client_options['channels'] = options.rooms unless options.nickpass
-
     # Override the response to provide a sendPrivate method
     @robot.Response = IrcResponse
 
